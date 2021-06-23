@@ -10,14 +10,14 @@ module.exports = {
         accessToken: "6b525d78f501bf1c0b52e80f3b480935",
       },
     },
-    "gatsby-plugin-sass",
-    "gatsby-plugin-image",
     {
-      resolve: "gatsby-plugin-google-analytics",
+      resolve: "gatsby-plugin-anchor-links",
       options: {
-        trackingId: "",
+        offset: -100,
       },
     },
+    "gatsby-plugin-sass",
+    "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     {
