@@ -1,8 +1,8 @@
 .hero {
   height: 90vh;
   z-index: -2;
+  justify-items: end;
   h2 {
-    // height: 50vh;
     padding-top: 50vh;
     padding-left: 2vw;
     font-size: 16px;
@@ -27,90 +27,89 @@
     span:nth-of-type(1) {
       background-color: rgb(213, 69, 43);
       color: white;
-      font-size: 20px;
+      // font-size: 20px;
       padding: 5px;
     }
     span:nth-of-type(2) {
       background-color: rgb(62, 130, 189);
       color: white;
-      font-size: 20px;
+      // font-size: 20px;
       padding: 5px;
     }
     span:nth-of-type(3) {
       background-color: rgb(63, 138, 97);
       color: white;
-      font-size: 20px;
+      // font-size: 20px;
       padding: 5px;
     }
   }
 }
 
-//Tablet portrait
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
-  .hero {
-    p {
-      font-size: 30px;
-      span {
-        &:nth-of-type(1) {
-          font-size: 40px;
-        }
-        &:nth-of-type(2) {
-          font-size: 40px;
-        }
-        &:nth-of-type(3) {
-          font-size: 40px;
-        }
-      }
-    }
-  }
-}
+// //Tablet portrait
+// @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+//   .hero {
+//     p {
+//       font-size: 30px;
+//       span {
+//         &:nth-of-type(1) {
+//           font-size: 40px;
+//         }
+//         &:nth-of-type(2) {
+//           font-size: 40px;
+//         }
+//         &:nth-of-type(3) {
+//           font-size: 40px;
+//         }
+//       }
+//     }
+//   }
+// }
 
-//Tablet landscape
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
-  .hero {
-    h2 {
-      padding-top: 50vh;
-      padding-left: 50vw;
-    }
-    #bgImg {
-      background: linear-gradient(
-        90deg,
-        rgba(2, 0, 36, 1) 0%,
-        rgba(255, 255, 255, 0) 65%
-      );
-      opacity: 1 !important;
-    }
+// //Tablet landscape
+// @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+//   .hero {
+//     h2 {
+//       padding-top: 50vh;
+//       padding-left: 50vw;
+//     }
+//     #bgImg {
+//       background: linear-gradient(
+//         90deg,
+//         rgba(2, 0, 36, 1) 0%,
+//         rgba(255, 255, 255, 0) 65%
+//       );
+//       opacity: 1 !important;
+//     }
 
-    p {
-      position: absolute;
-      color: white;
-      width: 40vw;
-      font-size: 40px;
-      top: 10vh;
-      span {
-        &:nth-of-type(1) {
-          font-size: 45px;
-        }
-        &:nth-of-type(2) {
-          font-size: 45px;
-        }
-        &:nth-of-type(3) {
-          font-size: 45px;
-        }
-      }
-    }
-  }
-}
+//     p {
+//       position: absolute;
+//       color: white;
+//       width: 40vw;
+//       font-size: 40px;
+//       top: 10vh;
+//       span {
+//         &:nth-of-type(1) {
+//           font-size: 45px;
+//         }
+//         &:nth-of-type(2) {
+//           font-size: 45px;
+//         }
+//         &:nth-of-type(3) {
+//           font-size: 45px;
+//         }
+//       }
+//     }
+//   }
+// }
 
 @media only screen and (min-width: 612px) {
   .hero {
     height: fit-content;
-    right: 0;
     display: grid;
     grid-template-columns: 20vw 80vw;
     background: linear-gradient(
       90deg,
-      rgba(3, 0, 45, 1) 28%,
+      rgba(3, 0, 45, 1) 30vw,
       rgba(253, 29, 29, 0) 59%,
       rgba(3, 0, 45, 0) 86%
     );
@@ -122,60 +121,61 @@
     #bgImg {
       grid-column-start: 2;
       opacity: 1 !important;
-      max-width: 1012px;
+      // max-width: 1012px;
     }
 
     p {
-      grid-column-start: 1;
-      padding-top: 5vh;
       position: absolute;
       color: white;
 
-      max-width: 40vw;
-      font-size: 1.5em;
-      top: 10vh;
-      span {
-        &:nth-of-type(1) {
-          font-size: 30px;
-        }
-        &:nth-of-type(2) {
-          font-size: 30px;
-        }
-        &:nth-of-type(3) {
-          font-size: 30px;
-        }
-      }
+      max-width: 60vw;
+      font-size: 1.3rem;
+      top: 25%;
+      left: 0;
     }
   }
 }
 
-//desktop
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 812px) {
   .hero {
     grid-template-columns: 10vw 90vw;
+
+    background: linear-gradient(
+      90deg,
+      rgba(3, 0, 45, 1) 40vw,
+      rgba(253, 29, 29, 0) 59%,
+      rgba(3, 0, 45, 0) 86%
+    );
+
     h2 {
       padding-top: 70vh;
     }
+
     p {
-      padding-top: 25vh;
+      max-width: 50vw;
+      font-size: 1.7rem;
     }
   }
 }
-//super wide desktop
 @media only screen and (min-width: 1124px) {
   .hero {
-    grid-template-columns: 20vw 80vw;
+    grid-template-columns: 10vw 90vw;
+
     background: linear-gradient(
       90deg,
-      rgba(3, 0, 45, 1) 28%,
-      rgba(253, 29, 29, 0) 67%,
-      rgba(3, 0, 45, 1) 82%
+      rgba(3, 0, 45, 1) 50vw,
+      rgba(253, 29, 29, 0) 59%,
+      rgba(3, 0, 45, 0) 86%
     );
+
     h2 {
-      padding-top: 90vh;
+      padding-top: 80vh;
     }
+
     p {
-      padding-top: 25vh;
+      max-width: 40vw;
+      top: 30%;
+      font-size: 2rem;
     }
   }
 }
