@@ -17,7 +17,7 @@ const Hero = () => {
         desktopImage: file(relativePath: { eq: "hero.jpeg" }) {
           childImageSharp {
             fixed(width: 2000) {
-              ...GatsbyImageSharpFixed
+              ...GatsbyImageSharpFixed_withWebp
             }
           }
         }
@@ -36,7 +36,12 @@ const Hero = () => {
 
   return (
     <div className="hero">
-      <BackgroundImage id="bgImg" Tag="section" fluid={sources}>
+      <BackgroundImage
+        id="bgImg"
+        Tag="section"
+        fluid={sources}
+        backgroundColor={`#040e18`}
+      >
         <h2>
           <mark>
             Photo courtesy of &nbsp;

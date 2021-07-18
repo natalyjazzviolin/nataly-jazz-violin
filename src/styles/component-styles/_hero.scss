@@ -109,7 +109,7 @@
     grid-template-columns: 20vw 80vw;
     background: linear-gradient(
       90deg,
-      rgba(3, 0, 45, 1) 30vw,
+      #040e18 30vw,
       rgba(253, 29, 29, 0) 59%,
       rgba(3, 0, 45, 0) 86%
     );
@@ -121,7 +121,6 @@
     #bgImg {
       grid-column-start: 2;
       opacity: 1 !important;
-      // max-width: 1012px;
     }
 
     p {
@@ -142,7 +141,7 @@
 
     background: linear-gradient(
       90deg,
-      rgba(3, 0, 45, 1) 40vw,
+      #040e18 40vw,
       rgba(253, 29, 29, 0) 59%,
       rgba(3, 0, 45, 0) 86%
     );
@@ -163,7 +162,7 @@
 
     background: linear-gradient(
       90deg,
-      rgba(3, 0, 45, 1) 50vw,
+      #040e18 50vw,
       rgba(253, 29, 29, 0) 59%,
       rgba(3, 0, 45, 0) 86%
     );
