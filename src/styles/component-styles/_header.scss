@@ -3,6 +3,10 @@ $secondary-color: #ffffff;
 
 .nav {
   width: 100vw;
+
+  //TODO - sticky nav breaks mobile nav
+  position: fixed;
+  top: 0;
   height: fit-content;
   overflow: hidden;
   background-color: $primary-color;
@@ -32,7 +36,8 @@ $secondary-color: #ffffff;
         a {
           color: $secondary-color;
           text-decoration: none;
-          font-size: 24px;
+          font-size: 20px;
+          vertical-align: bottom;
         }
       }
       &:nth-last-child(2) {
@@ -61,7 +66,6 @@ $secondary-color: #ffffff;
 
 //Mobile menu button
 #nav__toggle {
-  z-index: 5;
   width: 50px;
   height: 50px;
   background-color: transparent;
@@ -83,7 +87,6 @@ $secondary-color: #ffffff;
     width: 100%;
     background: #ffffff;
     border-radius: 9px;
-    // opacity: 1.5;
     left: 0;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -134,12 +137,12 @@ $secondary-color: #ffffff;
 }
 
 .mobilenav {
-  position: absolute;
+  position: fixed;
+  z-index: 1000;
   left: 0;
   background-color: $primary-color;
   height: 100%;
   width: 100%;
-  z-index: 2;
   margin-left: 0px;
   margin-top: 5vh;
   padding-top: 5vh;
@@ -210,7 +213,8 @@ $secondary-color: #ffffff;
 
 @media only screen and (min-width: 612px) {
   .nav {
-    // white-space: nowrap;
+    height: 10vh;
+    white-space: nowrap;
     &__list {
       display: grid;
       grid-auto-flow: column;
@@ -222,25 +226,6 @@ $secondary-color: #ffffff;
         }
         &:first-child a {
           font-size: 20px;
-        }
-      }
-    }
-  }
-  #nav__toggle {
-    visibility: hidden;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .nav {
-    white-space: nowrap;
-    &__list {
-      display: grid;
-      grid-auto-flow: column;
-      grid-template-columns: 1fr repeat(4, 125px);
-      &-item {
-        visibility: visible;
-        &:first-child a {
-          font-size: 25px;
         }
       }
     }

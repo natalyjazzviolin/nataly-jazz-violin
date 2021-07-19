@@ -6,8 +6,10 @@ import Home from "../components/Home";
 const IndexPage = () => {
   return (
     <>
-      <Header />
-      <Home />
+      <div className="container">
+        <Header />
+        <Home />
+      </div>
     </>
   );
 };

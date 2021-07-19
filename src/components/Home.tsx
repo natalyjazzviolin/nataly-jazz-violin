@@ -6,9 +6,10 @@ import { AnchorLink } from "gatsby-plugin-anchor-links";
 const Home = () => {
   return (
     <main>
-      <div className="bg">
+      <div className="container">
         <Hero />
       </div>
+      <Events />
     </main>
   );
 };
